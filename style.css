@@ -16,7 +16,7 @@ body {
 }
 
 /*------------------ Header style ------------------*/
-header {
+nav {
   background-color: #f3f3f3;
   font-size: 10px;
   font-weight: 400;
@@ -27,36 +27,15 @@ header {
   flex-direction: column;
   justify-content:flex-start;
   align-items: center;
-  width: 30%;
+  width: 35%;
   height: 100%;
   border-right: 2px solid gray;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
-@media(max-width: 800px){
-  header{
-    position: relative;
-    width: 100%;
-    border-right: none;
-    border-bottom: 2px solid gray;
-    height: 300px;
-  }
-  nav a:first-child{
-    border-top: 2px solid gray;
-  }
-}
-
-h1{
-  font-size: 25px;
-  padding: 20px;
-}
-
-nav{
-  display: flex;
-  flex-direction: column;
-  justify-content:flex-start;
-  font-size: 15px;
-  width: 100%;
+nav header{
+  position: static;
+  background-color: #f3f3f3;
 }
 
 nav a{
@@ -65,14 +44,27 @@ nav a{
   color: black;
   text-decoration: none;
   padding: 15px;
+  width: 100%;
+  font-size: 15px;
   margin: 0;
 }
 
-@media(max-width: 650px){
+@media(max-width: 815px){
   nav{
-    flex-direction: column;
-    align-items: center;
+    position: relative;
+    width: 100%;
+    border-right: none;
+    border-bottom: 2px solid gray;
+    height: 300px;
   }
+  nav a:first-of-type{
+    border-top: 2px solid gray;
+  }
+}
+
+h1{
+  font-size: 22px;
+  padding: 20px;
 }
 
 /*------------------ Header style ------------------*/
@@ -81,15 +73,17 @@ nav a{
 main{
   display: block;
   margin: 0 auto;
-  padding-left: 35%;
+  padding-left: 45%;
 }
-@media(max-width: 800px){
+@media(max-width: 815px){
   main{
     padding-left: 5%;
   }
 }
+
 h2{
   margin-top: 15px;
+  font-size: 25px;
 }
 
 section{
